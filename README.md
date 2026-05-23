@@ -70,7 +70,7 @@ To force specific clips every time:
 4. Run `./install.sh` manually to apply.
 
 ---
-## NiXOS 
+## NIXOS 
 1. Add the flake input
 ```
 {
