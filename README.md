@@ -25,7 +25,7 @@ cd MikuPlymouth
 chmod +x install.sh
 sudo ./install.sh
 ```
-To choose certain clips, scroll down to **Customization**
+To choose certain clips, scroll down to [**Customization**](#customization)
 
 !!WARNING!!: IF YOU ARE USING A LOWER END DEVICE, [EDIT THE SCRIPT TO PICK A LOWER NUMBER OF CLIPS TO INSTALL](#customization)
 
