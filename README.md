@@ -27,6 +27,8 @@ sudo ./install.sh
 ```
 To choose certain clips, scroll down to **Customization**
 
+!!WARNING!!: IF YOU ARE USING A LOWER END DEVICE, [EDIT THE SCRIPT TO PICK A LOWER NUMBER OF CLIPS TO INSTALL](#customization)
+
 ### 2. Daily Automation (Recommended)
 Because of RAM and `initramfs` size limits, only 10 clips are active at once. Use the systemd timer to rotate them automatically:
 
@@ -73,7 +75,6 @@ To force specific clips every time:
 
 ### RAM Usage
 Plymouth runs in uncompressed RAM and 1080p images are heavy! 
-- **10 clips** (240 frames) use **~2GB of RAM**.(I think)
 - Using more than 10 clips may cause the boot process to freeze or show a black screen depending on your hardware.
 
 ### Black Screen
