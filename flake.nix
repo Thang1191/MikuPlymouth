@@ -152,6 +152,7 @@ EOF
       overlay = final: prev: {
         mikuPlymouth = buildTheme final defaultClips;
         mikuPlymouthFull = buildTheme final allClips;
+        mkMikuPlymouth = clips: buildTheme final clips;
       };
 
       nixosModule =
