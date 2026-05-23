@@ -79,8 +79,8 @@ Plymouth runs in uncompressed RAM and 1080p images are heavy!
 
 ### Black Screen
 - It is possible that plymouth has crashed. The easiest fix is to modify install.sh to install less clips/
-- Locate the line: `selected_clips=$(echo "$available_clips" | shuf -n 10 | sort)`
-- Lower the number "10" until it's usable (4 should be enough for lower end devices)
+- Locate the line: `pickcount=10`
+- Lower the number '10' until it's usable (4 should be enough for lower end devices)
 
 ---
 
