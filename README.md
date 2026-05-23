@@ -13,7 +13,6 @@ https://github.com/user-attachments/assets/210208de-d814-414a-8e18-822979c38ce6
 
 - `plymouth`
 - `plymouth-plugin-script`
-- `mkinitcpio` (Arch-based systems)
 
 ## Installation
 
