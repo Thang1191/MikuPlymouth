@@ -27,7 +27,7 @@ sudo ./install.sh
 ```
 To choose certain clips, scroll down to [**Customization**](#customization)
 
-!!WARNING!!: IF YOU ARE USING A LOWER END DEVICE, [EDIT THE SCRIPT TO PICK A LOWER NUMBER OF CLIPS TO INSTALL](#customization)
+!!WARNING!!: IF YOU ARE USING A LOWER END DEVICE, [EDIT THE SCRIPT TO PICK A LOWER NUMBER OF CLIPS TO INSTALL](#system-limitations-&-troubleshooting)
 
 ### 2. Daily Automation (Recommended)
 Because of RAM and `initramfs` size limits, only 10 clips are active at once. Use the systemd timer to rotate them automatically:
