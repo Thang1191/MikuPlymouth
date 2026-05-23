@@ -107,6 +107,16 @@ boot.plymouth = {
   theme = "MikuPlymouth";
 };
 ```
+### Customization
+```
+boot.plymouth = {
+  enable = true;
+  themePackages = [
+    (pkgs.mkMikuPlymouth [ 2 5 10 15 21 ])
+  ];
+  theme = "MikuPlymouth";
+};
+```
 
 ## System Limitations & Troubleshooting
 
