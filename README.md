@@ -70,6 +70,43 @@ To force specific clips every time:
 4. Run `./install.sh` manually to apply.
 
 ---
+## NiXOS 
+1. Add the flake input
+```
+{
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    mikuPlymouth = {
+      url = "github:Thang1191/MikuPlymouth";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
+}
+```
+
+2. Add the module and configure plymouth
+```
+modules = [
+  mikuPlymouth.nixosModules.default
+
+  {
+    boot.plymouth = {
+      enable = true;
+      themePackages = [ pkgs.mikuPlymouth ];
+      theme = "MikuPlymouth";
+    };
+  }
+];
+```
+### Using all 37 clips
+To use all 37 clips instead of 10, use pkgs.mikuPlymouthFull
+```
+boot.plymouth = {
+  enable = true;
+  themePackages = [ pkgs.mikuPlymouthFull ];
+  theme = "MikuPlymouth";
+};
+```
 
 ## System Limitations & Troubleshooting
 
