@@ -1,4 +1,4 @@
-# Dynamic Miku Plymouth Theme
+# Dynamic Miku Plymouth Theme (Currently Fixing Bugs and Optimising Script. Come back later ;) )
 
 **Artist Credit:** Original animations by [@x_cast_x](https://twitter.com/x_cast_x) on Twitter.
 ## Preview
