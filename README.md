@@ -52,6 +52,9 @@ Because of RAM and `initramfs` size limits, only 10 clips are active at once. Us
 
 The service will now automatically run install.sh every day 1 minute after boot. It will also prevent shutdown for 20 seconds when running just in case.
 
+- **Check Timer**: `systemctl list-timers miku-rotate.timer`
+- **View Logs**: `journalctl -u miku-rotate.service`
+
 ---
 
 ## Customization
@@ -150,9 +153,3 @@ This fix **only** applies to systems that uses **mkinitcpio and GRUB**. If you u
    ```bash
    sudo grub-mkconfig -o /boot/grub/grub.cfg
    sudo mkinitcpio -P
-
----
-
-## Commands
-- **Check Timer**: `systemctl list-timers miku-rotate.timer`
-- **View Logs**: `journalctl -u miku-rotate.service`
