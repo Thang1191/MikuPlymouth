@@ -140,7 +140,7 @@ Plymouth runs in uncompressed RAM and 1080p images are heavy!
 ### NVIDIA Early KMS (Mandatory for RTX/GTX Cards)
 If you see a black screen or the animation only shows up right before the login screen, you must enable Early KMS:
 
-This fix only applies to systems that uses mkinitcpio and GRUB. If you use other other systems, you will have to look up how to enable Early KMS yourself.
+This fix **only** applies to systems that uses **mkinitcpio and GRUB**. If you use other other systems, you will have to look up how to enable Early KMS yourself.
 
 1. Edit `/etc/mkinitcpio.conf` and add the drivers to the `MODULES` array:
    `MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)`
