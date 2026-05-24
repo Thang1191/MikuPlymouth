@@ -50,7 +50,7 @@ Because of RAM and `initramfs` size limits, only 10 clips are active at once. Us
    sudo systemctl enable --now miku-rotate.timer
    ```
 
-Miku will now silently refresh her routine 1 minute after boot daily.
+The service will now automatically run install.sh every day 1 minute after boot. It will also prevent shutdown for 20 seconds when running just in case.
 
 ---
 
