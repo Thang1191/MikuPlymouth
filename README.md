@@ -7,7 +7,7 @@ https://github.com/user-attachments/assets/210208de-d814-414a-8e18-822979c38ce6
 
 - The install script picks 10 random clips from a pool of 37 for every installation.
 - The plymouth script also shuffle the 10 installed clips every boot.
-- Optional systemd timer to rotate clips routine automatically every day. (Manual setup)
+- Optional systemd timer to rotate clips automatically every day. (Manual setup)
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ To choose certain clips, scroll down to [**Customization**](#customization)
 !!WARNING!!: IF YOU ARE USING A LOWER END DEVICE, [EDIT THE SCRIPT TO PICK A LOWER NUMBER OF CLIPS TO INSTALL](#black-screen)
 
 ### 2. Daily Automation (Recommended)
-Because of RAM and `initramfs` size limits, only 10 clips are active at once. Use the systemd timer to rotate them automatically:
+Because of RAM and `initramfs` size limits, only 10 clips are active at once. Use the systemd timer to automatically run the script and have all 37 clips:
 
 1. **Clone and move the project to a permanent location:**
    ```bash
@@ -69,7 +69,7 @@ To force specific clips every time:
 3. Replace it with your specific clip IDs: `selected_clips="clip002 clip015 clip021"`
 4. Run `./install.sh` manually to apply.
 
-## Using all 37 clips (Not recommended)
+## Using all 37 clips simultaneously. (Not recommended)
 If you have a beefy computer and don't mind having 900+ frames of animation being loaded to ram every boot
 1. Open `install.sh`.
 2. Locate the line: `pickcount=10`
